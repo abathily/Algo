@@ -1,0 +1,25 @@
+ALGORITHM Nombre de lettre
+VAR
+    phrase=STRING;
+    nbrCaractere,i,nbrMot,nbrVyelle : INTEGER
+BEGIN
+    i=0
+    nbrCaractere=0
+    nbrMot=1
+    nbrVyelle=0
+    Write("Saisir")
+    Read(phrase)
+
+    WHILE (phrase[i]<>".") DO
+        nbrCaractere=nbrCaractere+1
+        i++
+    END_WHILE
+    Write("nombre de caractere est:"nbrCaractere);
+    FOR i FROM 0 TO nbrCaractere-1 STEP 1  DO
+        IF (phrase[i]) === "" THEN
+            nbrMot=nbrMot+1
+        END_IF
+    END_FOR
+
+
+END

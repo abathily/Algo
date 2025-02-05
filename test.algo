@@ -21,5 +21,14 @@ BEGIN
         END_IF
     END_FOR
 
+    voyelle= ['a','e','i','o','u','y','A','E','I','O','U','Y'];
+    
+    FOR i FROM 0 TO phrase[i] STEP 1  DO
+        IF (i === voyelle[j]) THEN
+            nbrVyelle= nbrVyelle+1
+        END_IF
+    END_FOR
+    Write("nombre de caractere est:"nbrVyelle);
+
 
 END
